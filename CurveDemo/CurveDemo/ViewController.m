@@ -43,6 +43,15 @@
 
 - (void)startLoading
 {
+    [UIView animateWithDuration:1.0 delay:0.5 usingSpringWithDamping:0.2 initialSpringVelocity:2 options:UIViewAnimationOptionRepeat animations:^{
+        
+        // damping 范围在0～1，接近0时弹性越大
+        // velocity 初始化速度，如果需要前进200像素点，想要得到100像素点每秒
+        //
+        
+    } completion:^(BOOL finished) {
+        
+    }];
     CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
     animation.toValue        = @(M_PI * 2);
     animation.duration       = 1.0f;
