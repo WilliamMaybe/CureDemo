@@ -10,6 +10,6 @@
 
 @interface CurveView : UIView
 
-@property (nonatomic, assign) CGFloat pogress;
+@property (nonatomic, assign) CGFloat progress;
 
 @end

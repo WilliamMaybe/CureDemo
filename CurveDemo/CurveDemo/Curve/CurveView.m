@@ -20,10 +20,10 @@
 
 - (CGFloat)progress { return self.curveLayer.progress; }
 
-- (void)setPogress:(CGFloat)pogress
+- (void)setProgress:(CGFloat)progress
 {
-    self.curveLayer.progress  = pogress;
-    self.curveLayer2.progress = pogress;
+    self.curveLayer.progress  = progress;
+    self.curveLayer2.progress = progress;
     
     [self.curveLayer setNeedsDisplay];
     [self.curveLayer2 setNeedsDisplay];
